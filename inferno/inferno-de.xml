@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="https://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/LEAF-VRE/code_snippets/refs/heads/main/CSS/leaf.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/LEAF-VRE/code_snippets/refs/heads/main/CSS/leaf.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -21,7 +17,91 @@
             <bibl>Translation of the Inferno, by Dante Alighieri</bibl>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/josephinechristmann/dh2026_JC/main/inferno/inferno-de.xml?person_annotation_20260727032018057",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-07-27T01:20:18.057Z",
+	"dcterms:modified": "2026-07-27T01:20:18.057Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/josephinechristmann",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Josephine Christmann"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/josephinechristmann/dh2026_JC/main/inferno/inferno-de.xml?person_annotation_20260727032018057#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/josephinechristmann/dh2026_JC/main/inferno/inferno-de.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.3.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/josephinechristmann/dh2026_JC/main/inferno/inferno-de.xml?person_annotation_20260727032018057#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/lg[5]/l[3]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person",
+			"http://id.lincsproject.ca/edit/modeIdentifiable"
+		],
+		"@id": "http://viaf.org/viaf/8194433",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.3.0"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><encodingDesc>
          <projectDesc>
             <p>This encoded file was created by members of the Linked Editing Academic Framework
                (LEAF) team and made available for a LEAF / LEAF-Writer workshop. This file is not
@@ -38,8 +118,7 @@
    <text xml:lang="de">
       <body>
          <div type="canto">
-            <pb
-               facs="https://upload.wikimedia.org/wikipedia/commons/3/38/Inferno_Canto_4_four_bards.jpg"/>
+            <pb facs="https://upload.wikimedia.org/wikipedia/commons/3/38/Inferno_Canto_4_four_bards.jpg"/>
             <head>Die Hölle: Gesang IV</head>
             <byline>Dante Alighieri</byline>
             <lg n="1" xml:id="lg001">
@@ -65,7 +144,7 @@
             <lg n="5" xml:id="lg005">
                <l n="13">"Laß uns zur blinden Welt hinunter steigen,</l>
                <l n="14">Ich bin der Erste, du der Zweite dann."</l>
-               <l n="15">So sprach Virgil, um drauf erblaßt zu schweigen.</l>
+               <l n="15">So sprach <persName key="Virgil." ref="http://viaf.org/viaf/8194433" cert="high" type="identifiable">Virgil</persName>, um drauf erblaßt zu schweigen.</l>
             </lg>
             <lg n="6" xml:id="lg006">
                <l n="16">Ich, sehend, wie die Bläss ihn überrann,</l>
